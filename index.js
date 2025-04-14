@@ -47,8 +47,24 @@ const vzdalenosti2 = numbers.map(cislo => Math.abs(cislo - 5)**2)
 document.body.innerHTML += vzdalenosti2 + "<br>"
 
 //9
-document.body.innerHTML += zaporna.length
+document.body.innerHTML += zaporna.length + "<br>"
 
-//10 nevim
+//10
+let soucet = 0
+numbers.forEach(function(num) {
+  soucet +=num
+})
+document.body.innerHTML += soucet + "<br>"
 
+//11
+document.body.innerHTML += soucet/numbers.length+ "<br>"
 
+//12
+const kladna = numbers.filter(cislo => cislo > 0)
+
+let soucetKladna = 0
+kladna.forEach(function(num) {
+  soucetKladna +=num
+})
+
+document.body.innerHTML += soucetKladna + "<br>"
